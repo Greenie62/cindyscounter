@@ -1,0 +1,253 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+}
+
+header{
+    height:10vh;
+    width:100%;
+    background:rgb(92, 92, 233);
+
+}
+
+
+.iceFishBtn{
+    width:45%;
+    border-radius:100px;
+    height:30px;
+    background:rgb(77, 212, 77);
+    top:35px;
+    left:25%;
+    border:2px solid black;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:1px 0px 3px white;
+    cursor:pointer;
+}
+
+
+
+.h1one, .h2one, .h1two{
+    position:absolute;
+}
+
+.h1one{
+    font-family: 'Akaya Telivigala', cursive;
+    left:15%;
+    top:10%;
+}
+
+.h1two{
+    left:60%;
+    top:45%;
+    font-family: 'Akaya Telivigala', cursive;
+
+}
+
+.h1two, .h1one{
+    text-shadow:1px 1px 6px white;
+    z-index:2;
+}
+
+.h1three{
+    left:40%;
+    top:30%;
+    color:white;
+    text-shadow:1px -1px 1px black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.mainArea{
+    height:83vh;
+    width:100%;
+    background:linear-gradient(to right,lightgray,rgb(245, 234, 234),rgb(233, 223, 223),rgb(196, 196, 250));
+}
+
+.container{
+    height:75%;
+    width:75%;
+    /* border:1px solid black; */
+    left:12%;
+    top:12%;
+
+}
+
+.iceGrid, .fishBox{
+    position:absolute;
+}
+
+.iceGrid{
+    height:85%;
+    width:100%;
+    /* border:1px solid red; */
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
+    top:8%;
+    overflow:hidden;
+}
+
+.ice{
+    background:linear-gradient(to right,lightblue,lightgray);
+    border-radius:5%;
+    border:1px solid black;
+    border-radius:10%;
+}
+
+.fishBox{
+    height:65%;
+    width:100%;
+    /* border:1px solid orange; */
+    top:18%;
+}
+
+.speechBlurb{
+    width:100px;
+    height:50px;
+    border:1px solid black;
+    top:25px;
+    left:85%;
+    border-radius:35%;
+    background:white;
+    z-index:2;
+    opacity:0;
+    transition:1s ease;
+}
+
+.blurbRow{
+    width:100px;
+    height:50px;
+    /* border:1px solid black; */
+    left:70%;
+    top:20px;
+    z-index:2;
+}
+
+.blurb{
+    border-radius:50%;
+    border:1px solid black;
+    position:absolute;
+    background:white;
+    opacity:0;
+    transition:1s ease;
+}
+
+.blurb1{
+    left:25px;
+    top:30px;
+    height:8px;
+    width:8px;
+}
+
+.blurb2{
+    left:40px;
+    top:15px;
+    width:13px;
+    height:10px;
+}
+
+.blurb3{
+    width:17px;
+    height:13px;
+    left:55px;
+    top:5px;
+}
+
+.caption{
+    left:15px;
+    top:5px;
+}
+
+
+
+.fish{
+    width:85%;
+    height:45%;
+    border-radius:45%;
+    /* border:2px solid red; */
+    left:10%;
+    top:5%;
+    z-index:2;
+    background:linear-gradient(to right,gray,darkgray)
+}
+
+.fishEye{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:1px solid black;
+    left:75%;
+    top:15%;
+    background:lightgray;
+
+}
+
+.gillBox{
+    width:75px;
+    height:40px;
+    /* border:1px solid black; */
+    left:55%;
+    top:15%;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.gill{
+    height:20px;
+    width:1px;
+    background:black;
+    transform:rotate(35deg);
+    opacity:.7;
+}
+
+.fishTail {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid gray;
+    position:absolute;
+    top:0;
+    left:-25px;
+  }
+
+  .fishMouth{
+      width:20px;
+      height:2px;
+      background:black;
+      left:93%;
+      top:55%;
+      transform:rotate(-20deg);
+      transition:1s ease;
+      transform-origin:bottom;
+  }
+
+
+  .emptyTray{
+      height:85%;
+      width:100%;
+      border-radius:50%;
+      background:rgb(218, 213, 213);
+      top:-150px;
+      z-index:1;
+      border:1px solid black;
+  }
+
+
+
+footer{
+    text-align:center;
+    height:5vh;
+    width:100%;
+    background:rgb(92, 92, 233);
+}
+
+footer > p{
+    top:10px;
+    text-shadow:1px 1px 6px white;
+}
